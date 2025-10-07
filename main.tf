@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "one" {
   count                  = 4
   ami                    = "ami-02d26659fd82cf299"
-  instance_type          = "t2.medium"
+  instance_type          = "t2.micro"
   key_name               = "key"
   vpc_security_group_ids = ["sg-0c4e71988d34dff4e"]
   tags = {
